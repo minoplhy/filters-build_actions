@@ -46,4 +46,4 @@ cd /aniki
 echo $API_TOKEN_GITHUB > token.txt
 gh auth login --with-token < token.txt
 rm token.txt
-gh release create filters-build -t "FILTERS-BUILD IN RELEASES" $MAKE_DIR/output/*
+gh release create filters-build -t "FILTERS-BUILD IN RELEASES" $MAKE_DIR/output/* -F /aniki/Resources/Releases_filters-build.md
