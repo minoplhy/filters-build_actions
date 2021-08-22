@@ -1,0 +1,9 @@
+name: "SWIT"
+description: "Whooozl"
+branding:
+  icon: 'activity'
+  color: 'green'
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
