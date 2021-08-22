@@ -38,8 +38,8 @@ mkdir $MAKE_DIR/Bromite
 cd $MAKE_DIR/Bromite
 wget https://github.com/bromite/filters/releases/download/92.0.4515.103/ruleset_converter
 chmod +x ruleset_converter
-curl https://github.com/minoplhy/Bromite-custom-adblock/raw/main/wget-all-filters.txt | bash
-curl https://github.com/minoplhy/Bromite-custom-adblock/raw/main/lazy-converter.txt | bash
+curl https://raw.githubusercontent.com/minoplhy/Bromite-custom-adblock/main/wget-all-filters.txt | bash
+curl https://raw.githubusercontent.com/minoplhy/Bromite-custom-adblock/main/lazy-converter.txt | bash
 cp filters.dat $MAKE_DIR/output/filters.dat
 
 cd /aniki
