@@ -23,16 +23,16 @@ wget -O $MAKE_DIR/stevenblack-f-s_raw.txt https://raw.githubusercontent.com/Stev
 python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/stevenblack-f-s_raw.txt $MAKE_DIR/output/stevenblack-f-s_rpz.txt
 
 wget -O $MAKE_DIR/adguard-dns_raw.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt
-python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-dns_raw.txt $MAKE_DIR/output/adguard-dns_rpz.txt
+python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-dns_raw.txt $MAKE_DIR/output/Adguard-dns_rpz.txt
 
 wget -O $MAKE_DIR/cname-tracker_raw.txt https://github.com/AdguardTeam/cname-trackers/raw/master/combined_disguised_trackers.txt
-python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/cname-tracker_raw.txt $MAKE_DIR/output/cname-tracker_rpz.txt
+python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/cname-tracker_raw.txt $MAKE_DIR/output/Adguard-cname-tracker_rpz.txt
 
 wget -O $MAKE_DIR/cname-original_raw.txt https://github.com/AdguardTeam/cname-trackers/raw/master/combined_original_trackers.txt
-python3 /filters-converter/to-rpz/adguard-host-wildcards_rpz_argv.py $MAKE_DIR/cname-original_raw.txt $MAKE_DIR/output/cname-tracker_rpz.txt
+python3 /filters-converter/to-rpz/adguard-host-wildcards_rpz_argv.py $MAKE_DIR/cname-original_raw.txt $MAKE_DIR/output/Adguard-cname-original_rpz.txt
 
 wget -O $MAKE_DIR/adguard-exceptions_raw.txt https://github.com/AdguardTeam/AdGuardSDNSFilter/raw/master/Filters/exceptions.txt
-python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-exceptions_raw.txt $MAKE_DIR/output/adguard-exceptions_rpz.txt
+python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-exceptions_raw.txt $MAKE_DIR/output/Adguard-exceptions_rpz.txt
 
 mkdir $MAKE_DIR/Bromite
 cd $MAKE_DIR/Bromite
