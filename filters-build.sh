@@ -22,15 +22,6 @@ python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/stevenblack_raw.txt
 wget -O $MAKE_DIR/stevenblack-f-s_raw.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts
 python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/stevenblack-f-s_raw.txt $MAKE_DIR/output/stevenblack-f-s_rpz.txt
 
-wget -O $MAKE_DIR/1Hosts-wildcards-lite_raw.txt https://badmojr.github.io/1Hosts/Lite/wildcards.txt
-python3 /filters-converter/to-rpz/domains_wildcards_rpz_argv.py $MAKE_DIR/1Hosts-wildcards-lite_raw.txt $MAKE_DIR/output/1Hosts-wildcards-lite_rpz.txt
-
-wget -O $MAKE_DIR/1Hosts-wildcards-Pro_raw.txt https://badmojr.github.io/1Hosts/Pro/wildcards.txt
-python3 /filters-converter/to-rpz/domains_wildcards_rpz_argv.py $MAKE_DIR/1Hosts-wildcards-Pro_raw.txt $MAKE_DIR/output/1Hosts-wildcards-Pro_rpz.txt
-
-wget -O $MAKE_DIR/1Hosts-wildcards-Xtra_raw.txt https://badmojr.github.io/1Hosts/Xtra/wildcards.txt
-python3 /filters-converter/to-rpz/domains_wildcards_rpz_argv.py $MAKE_DIR/1Hosts-wildcards-Xtra_raw.txt $MAKE_DIR/output/1Hosts-wildcards-Xtra_rpz.txt
-
 wget -O $MAKE_DIR/adguard-dns_raw.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt
 python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-dns_raw.txt $MAKE_DIR/output/adguard-dns_rpz.txt
 
