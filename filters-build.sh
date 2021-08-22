@@ -34,6 +34,13 @@ python3 /filters-converter/to-rpz/adguard-host-wildcards_rpz_argv.py $MAKE_DIR/c
 wget -O $MAKE_DIR/adguard-exceptions_raw.txt https://github.com/AdguardTeam/AdGuardSDNSFilter/raw/master/Filters/exceptions.txt
 python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-exceptions_raw.txt $MAKE_DIR/output/adguard-exceptions_rpz.txt
 
+mkdir $MAKE_DIR/Bromite
+cd $MAKE_DIR/Bromite
+wget https://github.com/bromite/filters/releases/download/92.0.4515.103/ruleset_converter
+curl https://github.com/minoplhy/Bromite-custom-adblock/raw/main/wget-all-filters.txt | bash
+curl https://github.com/minoplhy/Bromite-custom-adblock/raw/main/lazy-converter.txt | bash
+cp filters.dat $MAKE_DIR/output/filters.dat
+
 cd /aniki
 echo $API_TOKEN_GITHUB > token.txt
 gh auth login --with-token < token.txt
