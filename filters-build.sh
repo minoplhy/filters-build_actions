@@ -2,6 +2,7 @@ MAKE_DIR=$(mktemp -d)
 
 git clone https://github.com/minoplhy/filters-converter /filters-converter
 git clone https://github.com/minoplhy/filters /aniki
+mkdir $MAKE_DIR/output
 
 wget -O $MAKE_DIR/abpvn_raw.txt https://abpvn.com/android/abpvn.txt
 python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/abpvn_raw.txt $MAKE_DIR/output/abpvn_rpz.txt
