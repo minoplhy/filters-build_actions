@@ -46,7 +46,6 @@ cd /aniki
 echo $API_TOKEN_GITHUB > token.txt
 gh auth login --with-token < token.txt
 rm token.txt
-gh release delete latest -y
 gh release delete "filters-build" -y
 git tag | xargs -L 1 | xargs git push origin --delete
 gh release create filters-build -t "FILTERS-BUILD IN RELEASES" $MAKE_DIR/output/* -F /aniki/Resources/Releases_filters-build.md
