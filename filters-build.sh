@@ -19,8 +19,8 @@ python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/someonewhocares_raw
 wget -O $MAKE_DIR/stevenblack_raw.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/stevenblack_raw.txt $MAKE_DIR/output/stevenblack_rpz.txt
 
-wget -O $MAKE_DIR/stevenblack-f-s_raw.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts
-python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/stevenblack-f-s_raw.txt $MAKE_DIR/output/stevenblack-f-s_rpz.txt
+wget -O $MAKE_DIR/stevenblack-f_raw.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts
+python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/stevenblack-f_raw.txt $MAKE_DIR/output/stevenblack-f_rpz.txt
 
 wget -O $MAKE_DIR/adguard-dns_raw.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt
 python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-dns_raw.txt $MAKE_DIR/output/Adguard-dns_rpz.txt
