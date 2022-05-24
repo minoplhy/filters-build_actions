@@ -46,7 +46,7 @@ python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-mob
 
 mkdir $MAKE_DIR/Bromite
 cd $MAKE_DIR/Bromite
-wget https://github.com/bromite/filters/releases/download/92.0.4515.103/ruleset_converter
+wget https://github.com/bromite/bromite/releases/download/101.0.4951.69/ruleset_converter
 chmod +x ruleset_converter
 curl https://raw.githubusercontent.com/minoplhy/Bromite-custom-adblock/main/wget-all-filters.txt | bash
 curl https://raw.githubusercontent.com/minoplhy/Bromite-custom-adblock/main/lazy-converter.txt | bash >/dev/null
