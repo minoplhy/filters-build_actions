@@ -12,7 +12,7 @@ wget -O $MAKE_DIR/hosts-database-full-alive_raw.txt https://tgc.cloud/downloads/
 python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/hosts-database-full-alive_raw.txt $MAKE_DIR/output/hosts-database-full-alive_rpz.txt
 
 wget -O $MAKE_DIR/hostsVN-all_raw.txt https://github.com/bigdargon/hostsVN/raw/master/filters/adservers-all.txt
-python3 /filters-converter/to-rpz/domains_rpz_argv.py $MAKE_DIR/hostsVN-all_raw.txt $MAKE_DIR/output/hostsVN-all_rpz.txt
+python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/hostsVN-all_raw.txt $MAKE_DIR/output/hostsVN-all_rpz.txt
 
 wget -O $MAKE_DIR/someonewhocares_raw.txt https://someonewhocares.org/hosts/hosts
 python3 /filters-converter/to-rpz/host_rpz_argv.py $MAKE_DIR/someonewhocares_raw.txt $MAKE_DIR/output/someonewhocares_rpz.txt
