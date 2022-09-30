@@ -35,7 +35,7 @@ python3 /filters-converter/to-rpz/adguard-host-wildcards_rpz_argv.py $MAKE_DIR/c
 wget -O $MAKE_DIR/adguard-exceptions_raw.txt https://github.com/AdguardTeam/AdGuardSDNSFilter/raw/master/Filters/exceptions.txt
 python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-exceptions_raw.txt $MAKE_DIR/output/Adguard-exceptions_rpz.txt
 
-wget -O $MAKE_DIR/adguard-base_raw.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
+wget -O $MAKE_DIR/adguard-base_raw.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt
 python3 /filters-converter/to-rpz/adguard-host_rpz_argv.py $MAKE_DIR/adguard-base_raw.txt $MAKE_DIR/output/Adguard-Base_rpz.txt
 
 wget -O $MAKE_DIR/adguard-tracking_raw.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
